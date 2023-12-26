@@ -1,5 +1,5 @@
 # capstone-2
-### Phonepe_pulse Data Visualization and Exploration
+# Phonepe_pulse Data Visualization and Exploration
 
 # Data Visualization and Exploration : A User-Friendly Tool Using Streamlit and Plotly
 
@@ -35,8 +35,7 @@
         from streamlit_option_menu import option_menu
         from PIL import Image
         from git.repo.base import Repo
- 
- **Features:**
+        
 
 - **Data Collection:** Effortlessly clone PhonePe Pulse data from the GitHub repository to your local directory for seamless access.
 
