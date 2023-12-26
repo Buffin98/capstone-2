@@ -36,7 +36,7 @@
         from PIL import Image
         from git.repo.base import Repo
  
- **Features**
+ **Features:**
 
 - **Data Collection:** Effortlessly clone PhonePe Pulse data from the GitHub repository to your local directory for seamless access.
 
