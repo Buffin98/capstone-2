@@ -1,5 +1,7 @@
 # capstone-2
 Phonepe_pulse Data Visualization and Exploration
+
+
 Data Collection: Effortlessly clone PhonePe Pulse data from the GitHub repository to your local directory for seamless access.
 
 Data Overview: Dive into comprehensive insights about the collected data, including detailed breakdowns by states, years, quarters, transaction types, user devices, and more.
