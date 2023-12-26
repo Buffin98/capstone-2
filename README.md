@@ -1,12 +1,11 @@
 # capstone-2
 ### Phonepe_pulse Data Visualization and Exploration
-![img](https://user-images.githubusercontent.com/121713702/226621611-58ea743a-9f9d-43cd-880f-39e0f4e45b9c.png)
 
 # Data Visualization and Exploration : A User-Friendly Tool Using Streamlit and Plotly
 
-# What is PhonePe Pulse?
-  The [PhonePe Pulse website](https://www.phonepe.com/pulse/explore/transaction/2022/4/) showcases more than 2000+ Crore transactions by consumers on an interactive map of India. With over 45% market share, PhonePe's data is representative of the country's digital payment habits.
-The insights on the website and in the report have been drawn from two key sources - the entirety of PhonePe's transaction data combined with merchant and customer interviews. The report is available as a free download on the [PhonePe Pulse website](https://www.phonepe.com/pulse/explore/transaction/2022/4/) and [GitHub](https://github.com/PhonePe/pulse).
+# Introduction:
+  PhonePe has become a leader among digital payment platforms, serving millions of users for their daily transactions. Known for its easy-to-use design, fast and secure payment processing, and creative features, PhonePe has gained praise and recognition in the industry. The PhonePe Pulse Data Visualization and Exploration project aims to gather valuable information from PhonePe's GitHub repository, process the data, and present it using an interactive dashboard that's visually appealing. This is accomplished using Python, Streamlit, and Plotly.
+
 
 # Libraries/Modules needed for the project!
 
@@ -18,8 +17,6 @@ The insights on the website and in the report have been drawn from two key sourc
  6. git.repo.base - (To clone the GitHub repository)
  
  # Workflow
- 
- ### Step 1:
  
  **Importing the Libraries:**
  
@@ -39,49 +36,29 @@ The insights on the website and in the report have been drawn from two key sourc
         from PIL import Image
         from git.repo.base import Repo
  
- 
- ### Step 2:
- 
- **Data extraction:** 
+ **Features**
 
-   Clone the Github using scripting to fetch the data from the Phonepe pulse Github repository and store it in a suitable format such as JSON. Use the below syntax to clone the phonepe github repository into your local drive.
-    
-        from git.repo.base import Repo
-        Repo.clone_from("GitHub Clone URL","Path to get the cloded files")
-      
- ### Step 3:
- 
- **Data transformation:**
- 
-   In this step the JSON files that are available in the folders are converted into the readeable and understandable DataFrame format by using the for loop and iterating file by file and then finally the DataFrame is created. In order to perform this step I've used **os**, **json** and **pandas** packages. And finally converted the dataframe into CSV file and storing in the local drive.
-   
+- **Data Collection:** Effortlessly clone PhonePe Pulse data from the GitHub repository to your local directory for seamless access.
 
- ### Step 4:
- 
- **Database insertion & Creating tables:**
- 
-   To insert the dataframe into SQL first I've created a new database and tables using **"mysql-connector-python"** library in Python to connect to a MySQL database and insert the transformed data using SQL commands.
-   
-   **Creating the connection between python and mysql**
-   
-        mydb = mysql.connector.connect(host="localhost",
-                   user="username",
-                   password="password",
-                   database= "phonepe_pulse"
-                   port="3306"
-                  )
-        mycursor = mydb.cursor(buffered=True)
-        
-    
- ### Step 5:
- 
- **Dashboard creation:**
- 
-   To create colourful and insightful dashboard I've used Plotly libraries in Python to create an interactive and visually appealing dashboard. Plotly's built-in Pie, Bar, Geo map functions are used to display the data on a charts and map and Streamlit is used to create a user-friendly interface with multiple dropdown options for users to select different facts and figures to display.
-    
- ### Step 6:
- 
- **Data retrieval:**
- 
-   Finally if needed Using the "mysql-connector-python" library to connect to the MySQL database and fetch the data into a Pandas dataframe.
+- **Data Overview:** Dive into comprehensive insights about the collected data, including detailed breakdowns by states, years, quarters, transaction types, user devices, and more.
+
+- **Migrating Data to SQL Database:** Streamline your data by converting PhonePe Pulse data from JSON format to a structured DataFrame and efficiently store it in a PostgreSQL Database.
+
+- **Streamlit:** The Streamlit app provides an intuitive interface to interact with the charts and explore the data visually. Users can customize the visualizations, filter data, and zoom in or out to focus on specific aspects of the analysis.
+
+- **Plotly:** Utilizing the power of Plotly, users can create various types of charts, including line charts, bar charts, scatter plots, pie charts, and more. These visualizations enhance the understanding of the data and make it easier to identify patterns, trends, and correlations.
+
+- **Data Insights and Exploration:** Embark on an analytical journey with interactive Plotly charts and maps, offering insights across states, years, quarters, districts, transaction types, and user brands.
+
+- **Live Geo Visualization Dashboard:** Create a live geo visualization dashboard using Streamlit and Plotly for interactive data exploration, allowing you to dynamically interact with the data on maps.
+
+- **Top Performers Highlight:** Easily spot top 10 states, districts, and pincodes through user-friendly visualizations.
+
+- **User-Focused Dashboard:** Navigate through an intuitive Streamlit dashboard designed for user convenience, making exploration a breeze.
+
+- **Data-Driven Decision Making:** Empower your decision-making process by leveraging valuable trends, patterns, and statistics derived from the PhonePe Pulse data.
+
+  **Contact**
+
+📧 Email: buffinmuff98@gmail.com 
 
