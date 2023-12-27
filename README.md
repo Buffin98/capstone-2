@@ -41,7 +41,7 @@
 
 - **Data Overview:** Dive into comprehensive insights about the collected data, including detailed breakdowns by states, years, quarters, transaction types, user devices, and more.
 
-- **Migrating Data to SQL Database:** Streamline your data by converting PhonePe Pulse data from JSON format to a structured DataFrame and efficiently store it in a PostgreSQL Database.
+- **Migrating Data to SQL Database:** Streamline your data by converting PhonePe Pulse data from JSON format to a structured DataFrame and efficiently store it in a MySQL Database.
 
 - **Streamlit:** The Streamlit app provides an intuitive interface to interact with the charts and explore the data visually. Users can customize the visualizations, filter data, and zoom in or out to focus on specific aspects of the analysis.
 
